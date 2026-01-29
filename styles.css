@@ -1,3 +1,68 @@
+/* --- Matt Easter Egg Styles --- */
+.matt-easter-egg {
+  position: absolute;
+  z-index: 10;
+  pointer-events: auto;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+/* Tiny Matt in nav (top left, very small) */
+.matt-nav {
+  top: 18px;
+  left: 12px;
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+/* Matt peeking from hero bottom right */
+.matt-hero-peek {
+  bottom: -18px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  opacity: 0.85;
+  border-radius: 50%;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+/* Matt badge on Toyota card (bottom right, small) */
+.matt-toyota-badge {
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-dark);
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Matt as a dog treat (hidden until hover) */
+.matt-dog-treat {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) scale(0.7);
+  opacity: 0.2;
+  transition: opacity 0.3s, transform 0.3s;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.interest-card:hover .matt-dog-treat {
+  opacity: 1;
+  transform: translateX(-50%) scale(1.1) rotate(-10deg);
+}
+
+/* Ensure parent cards are positioned for absolute children */
+.interest-card, .card {
+  position: relative;
+}
 :root {
   color-scheme: light;
   --bg: #f5f3f0;
