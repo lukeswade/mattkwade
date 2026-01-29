@@ -101,6 +101,13 @@ body {
   margin-bottom: 32px;
 }
 
+.hero-quote {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: var(--accent-dark);
+  margin-bottom: 28px;
+}
+
 .hero-meta {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -163,6 +170,16 @@ button:hover {
 .section-heading h2 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.quote {
+  margin: 24px 0 32px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--accent);
+  background: rgba(201, 150, 92, 0.12);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text);
 }
 
 .story-grid,
