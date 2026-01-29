@@ -14,15 +14,17 @@
 }
 .matt-photo-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 18px;
   justify-items: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .matt-photo-grid img {
-  width: 100%;
-  max-width: 240px;
-  aspect-ratio: 1/1;
+  width: 220px;
+  height: 220px;
   object-fit: cover;
   border-radius: 18px;
   box-shadow: 0 4px 18px rgba(201,150,92,0.13);
