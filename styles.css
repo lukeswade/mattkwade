@@ -165,16 +165,6 @@ button:hover {
   font-size: clamp(2rem, 4vw, 3rem);
 }
 
-.quote {
-  margin: 24px 0 32px;
-  padding: 20px 24px;
-  border-left: 4px solid var(--accent);
-  background: rgba(201, 150, 92, 0.12);
-  font-style: italic;
-  font-size: 1.05rem;
-  color: var(--text);
-}
-
 .story-grid,
 .interest-grid {
   display: grid;
