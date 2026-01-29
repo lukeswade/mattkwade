@@ -1,45 +1,38 @@
-/* --- Wholesome Matt Images --- */
-.matt-hero-group {
-  display: flex;
-  gap: 18px;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 32px;
-  margin-top: 12px;
-}
-.matt-hero-group img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  box-shadow: 0 4px 18px rgba(201,150,92,0.13);
-  background: #fff;
-  transition: transform 0.2s;
-}
-.matt-hero-group img:hover {
-  transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 8px 32px rgba(201,150,92,0.18);
-}
 
-.matt-wholesome {
-  display: block;
-  margin: 18px auto 0 auto;
+/* --- Matt Photo Grid Section --- */
+.matt-photo-grid-section {
+  max-width: 700px;
+  margin: 64px auto 0 auto;
+  padding: 32px 0 0 0;
+  text-align: center;
+}
+.matt-photo-grid-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  color: var(--accent-dark);
+  margin-bottom: 24px;
+}
+.matt-photo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 18px;
+  justify-items: center;
+}
+.matt-photo-grid img {
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(201,150,92,0.10);
-  max-width: 90%;
+  box-shadow: 0 4px 18px rgba(201,150,92,0.13);
+  border: 3px solid var(--accent);
+  background: #fff;
+  transition: transform 0.18s;
 }
-.matt-toyota {
-  width: 100%;
-  max-width: 220px;
-  border: 2px solid var(--accent-dark);
-  margin-top: 18px;
-}
-.matt-dog {
-  width: 100%;
-  max-width: 180px;
-  border: 2px solid var(--accent);
-  margin-top: 18px;
+.matt-photo-grid img:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(201,150,92,0.18);
 }
 /* --- Matt Easter Egg Styles --- */
 .matt-easter-egg {
