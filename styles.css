@@ -408,9 +408,15 @@ button:hover {
 
 .life-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 32px;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .life-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
 }
 
 .life-copy h2 {
